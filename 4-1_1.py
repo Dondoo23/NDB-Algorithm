@@ -4,6 +4,8 @@ row_count = 0
 col_count = 0
 
 size = len(plan)
+
+# r l u d에 대하여 동작 구현 + 범위를 넘어가면 무시
 for i in range(size):
     if plan[i] == 'r':
         if row_count < n-1:
